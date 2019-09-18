@@ -7,3 +7,9 @@ server:
 spring:
   application:
     name: composite-product
+
+core-product:
+  ribbon:
+    eureka:
+      enabled: true
+#    listOfServers: "localhost:9090"

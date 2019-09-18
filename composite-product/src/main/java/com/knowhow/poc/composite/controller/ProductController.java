@@ -12,8 +12,8 @@ public class ProductController {
 
     private final ProductService productService;
 
-    @GetMapping("/core/{id}")
-    public void callCore(@PathVariable String id) {
-        productService.findCore(id);
+    @GetMapping("/composite/{id}")
+    public String callCore(@PathVariable String id) {
+        return productService.findCore(id);
     }
 }
