@@ -2,8 +2,11 @@ eureka:
   client:
     service-url:
       defaultZone: "http://localhost:8761/eureka/"
-server:
-  port: 9999
+#server:
+#  port: 9999
+app:
+  jwt:
+    public-key: "classpath:public.txt"
 spring:
   application:
     name: composite-product
